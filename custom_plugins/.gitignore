@@ -1,0 +1,14 @@
+# Ignore everything in this directory except this file
+*
+
+# Except this file
+!.gitignore
+
+# And the __init__.py file
+!__init__.py
+
+# The plugins in this directory should not be in the slackbot repo
+# plugins or groups of plugins should have their own repo.
+
+#   The __init__.py file includes any python file in any subdirectory, which imports all of the Commands from any plugins
+
