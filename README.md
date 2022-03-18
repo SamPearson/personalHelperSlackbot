@@ -4,19 +4,20 @@ A general purpose slackbot to automate the boring stuff
 
 
 A configuration file is needed to run the bot.
-Currently, it needs to be created manually, at this location:
+It needs to be created manually, at this location:
 
-default_plugins/connection_handler_slack/config.txt
+./default_plugins/connection_handler_slack/config.txt
 
-This file should be two lines long. The first line should be the name of the bot.
+This file needs a few pieces of information, one per line. The first line should be the name of the bot.
 
 The second line should be the the api token. To get that:
-Go here: https://YOURSLACKINSTALLATIONNAME.slack.com/services/
-click custom integrations
-click bots
-click add configuration and do so if necessary
-click the edit pencil by the configuration you want to use
-the API token will be on this page, it should start with xoxb-
+Go here: https://api.slack.com/apps
+(create an app if one has not been created)
+Click on the app 
+If the bot has been installed to your workspace, you should see a bot user OAuth token it should start with "xoxb-"
+
+The third line should be the bot user's "id", which can be retrieved by running print_bot_id.py from this directory:
+./default_plugins/connection_handler_slack
 
 
 Launching the bot:
